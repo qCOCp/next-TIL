@@ -9,5 +9,5 @@ React에 관련한 포괄적인 기술들을 공부 하기 위하여 시작한 �
 ## TIL List
 
 * 19.08.26 - init Project(typescript)
-* 19.08.27 - navigate pages
+* 19.08.27 - navigate pages, shared components
 

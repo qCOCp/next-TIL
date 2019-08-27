@@ -1,13 +1,20 @@
 import React from 'react'
-import Link from 'next/link'
+import { HOCLayout as withLayout } from '../components/Layout'
 
-const Index: React.FunctionComponent = () => (
-  <div>
-    <Link href="/about">
-      <a title="About Page">About Page</a>
-    </Link>
-    <p>Hello Next.js</p>
-  </div>
-)
+/**
+ * BASIC {props.children}
+ */
+// const Index: React.FunctionComponent = () => (
+//   <Layout>
+//     <p>Hello Next.js</p>
+//   </Layout>
+// )
 
-export default Index
+// export default Index
+
+/**
+ * HOC
+ */
+const Page: React.FunctionComponent = () => <p>Hello Next.js</p>
+
+export default withLayout(Page)
