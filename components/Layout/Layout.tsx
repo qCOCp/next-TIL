@@ -10,25 +10,25 @@ const layoutStyle = {
 /**
  * props.children
  */
-// const Layout: React.FunctionComponent = (props) => (
-//   <div style={layoutStyle}>
-//     <Header />
-//     {props.children}
-//   </div>
-// )
+const Layout: React.FunctionComponent = (props) => (
+  <div style={layoutStyle}>
+    <Header />
+    {props.children}
+  </div>
+)
 
-// export default Layout
+export default Layout
 
 /**
  * HOC
  */
-const withLayout = (Page: any) => {
-  return () => (
-    <div style={layoutStyle}>
-      <Header />
-      <Page />
-    </div>
-  )
-}
+// const withLayout = (Page: any) => {
+//   return () => (
+//     <div style={layoutStyle}>
+//       <Header />
+//       <Page />
+//     </div>
+//   )
+// }
 
-export default withLayout
+// export default withLayout
